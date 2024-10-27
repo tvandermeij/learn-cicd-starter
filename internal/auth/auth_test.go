@@ -38,4 +38,3 @@ func TestGetAPIKey_Errors(t *testing.T) {
 		})
 	}
 }
-
