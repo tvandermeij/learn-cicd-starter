@@ -24,7 +24,7 @@ jobs:
   stlye:
     name: Style
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: Format code
         run: test -z $(go fmt ./...)
@@ -33,5 +33,5 @@ jobs:
         run: go install honnef.co/go/tools/cmd/staticcheck@latest
 
       - name: Linting job
-        run: staticcheck
+        run: staticcheck ./...
 
