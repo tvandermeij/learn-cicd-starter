@@ -23,6 +23,10 @@ jobs:
         run: scripts/buildprod.sh
 
   job_id:
+    name: Deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
     steps:
     - id: 'auth'
       uses: 'google-github-actions/auth@v2'
